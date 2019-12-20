@@ -1,0 +1,56 @@
+$blue: #043353;
+$ash: #D3DDE6;
+$aux: #e09f1f;
+
+.admin-1{
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 100vh;
+}
+
+.ad-a{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $ash;
+}
+
+.ad-b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $blue;
+}
+
+.ad-a1 a{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: $blue;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.3s color;
+  font: Bold 40px/50px Century Gothic;
+  letter-spacing: -1.4px;
+  &:hover{
+    text-decoration: none;
+    color: $aux;
+  }
+}
+
+.ad-b1 a{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: $ash;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.3s color;
+  font: Bold 40px/50px Century Gothic;
+  letter-spacing: -1.4px;
+  &:hover{
+    text-decoration: none;
+    color: $aux;
+  }
+}

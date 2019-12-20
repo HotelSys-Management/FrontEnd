@@ -1,0 +1,56 @@
+<div class="admin-1">
+  <div class="ad-a">
+    <div class="ad-b1">
+      <a>Create Admin Account</a>
+    </div>
+    <div class="ad-b2">
+      <div class="ad-b3">
+        <form>
+          <div class="form1">
+            <div class="form-group">
+              <input type="text" required /><label>Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" required /><label>Email</label>
+            </div>
+            <div class="form-group">
+              <input type="password" required /><label>Password</label>
+              <button type="button">
+                <i class="far fa-eye-slash"></i>
+              </button>
+            </div>
+            <div class="a10">
+              By signing up, you agree to our <a href=""> Terms and Conditions</a>
+            </div>
+
+
+            <div class="ad-b7">
+              <button type="submit" > Sign Up</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="ad-b8">
+          <div class="a9">
+            <a href="">
+              <span><img src="assets/img/google.png" alt="" width="20px"></span> Sign Up with Google
+            </a>
+          </div>
+          <div class="a9">
+            <a href="">
+              <span><img src="assets/img/facebook.png" alt="" width="20px"></span> Sign Up with Facebook
+            </a>
+          </div>
+          <div class="a10">
+            Have an account?? <a [routerLink]="['/admin/signin']"> Signin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ad-b">
+    <div class="ad-a1">
+      <a [routerLink]="['/admin/signin']">Admin Login</a>
+    </div>
+  </div>
+</div>

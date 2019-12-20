@@ -1,0 +1,265 @@
+$blue: rgb(4, 51, 83);
+$ash: rgb(209, 220, 229);
+$aux: #e09f1f;
+
+.admin-1 {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 100vh;
+}
+
+.ad-a {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  background-color: $ash;
+  overflow: hidden
+}
+
+.ad-b {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  background-color: $blue;
+  animation-duration: 1s;
+  animation-name: resize;
+}
+
+.ad-a1 a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: $ash;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s color;
+  font: Bold 40px/50px Century Gothic;
+  letter-spacing: -1.4px;
+  &:hover {
+    text-decoration: none;
+    color: $aux;
+  }
+}
+
+.ad-b1{
+  margin: 10px 0px 10px 0px;
+  animation-name: slide;
+  animation-duration: 2s;
+  color: $blue;
+}
+
+.ad-b1 a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: $blue;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s color;
+  font: Bold 40px/50px Century Gothic;
+  letter-spacing: -1.4px;
+  &:hover {
+    text-decoration: none;
+    color: $blue;
+  }
+}
+
+.ad-b2 {
+  width: 100%;
+}
+.ad-b3 {
+  margin: 10px auto;
+  background-color: $blue;
+  padding: 30px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  width: 55%;
+  animation-name: slide2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+.form-group {
+	position: relative;
+	padding: 3px 0;
+  width: 100%;
+  margin: 0;
+button{
+  background: none;
+  border: none;
+  position: absolute;
+  right: 5px;
+  color: $ash;
+  top: 16px;
+  &:active{
+    outline: none;
+    color: $aux;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+}
+
+.form-group input {
+	background-color: transparent;
+	border: none;
+  border-bottom: 2px solid $ash;
+	font-size: 16px;
+	display: block;
+  width: 100%;
+  margin: 15px 0;
+  color: $ash;
+}
+
+.form-group label {
+  display: block;
+  color: $ash;
+  opacity: 0.5;
+  letter-spacing: -1px;
+  position: absolute;
+  pointer-events: none;
+  transition: all 0.6s;
+  left: 0;
+  top: 0;
+	transform: translateY(15px);
+}
+
+.form-group input:valid,
+.form-group input:focus {
+	outline: none;
+}
+
+.form-group input:valid + label,
+.form-group input:focus + label {
+	color: $ash;
+  font-size: 14px;
+  font-weight: bold;
+	transform: translateY(0);
+}
+
+.ad-b5{
+  margin: 20px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.ad-b4{
+  label{
+    span{
+      margin-left: 5px;
+      vertical-align: middle;
+      color: $ash;
+      font-size: 14px;
+    }
+  }
+}
+
+.ad-b6 a{
+  vertical-align: middle;
+  color: $ash;
+  font-size: 14px;
+  transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+  &:hover{
+    text-decoration: none;
+    color: $aux;
+  }
+}
+
+.ad-b7{
+  display: flex;
+  justify-content: center;
+  button{
+    border: none;
+    width: 50%;
+    border-radius: 30px;
+    color: $blue;
+    font-weight: bold;
+    padding: 8px 20px;
+    background: $ash;
+    margin-top: 30px;
+    transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+    &:hover{
+      background: $aux;
+    }
+  }
+}
+
+.ad-b8{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  .a9{
+    margin: 7px 0;
+  }
+  .a9 a{
+    font-size: 14px;
+    color: rgba(209, 220, 229, .5);
+    font-weight: 500;
+    transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+    img {
+      vertical-align: bottom;
+    border-style: none;
+    margin-right: 3px;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+    .a10{
+      margin: 12px 0 0 0;
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(209, 220, 229, .5);
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+      a {
+        font-size: 14px;
+        color: $ash;
+      font-weight: 500;
+      text-decoration: underline;
+        transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+        &:hover{
+          color: $ash;
+        }
+    }
+  }
+
+@keyframes resize{
+  from{
+    width: 55%;
+  }
+  to{
+    width: 45%;
+  }
+}
+
+@keyframes slide{
+  from{
+    transform: translateY(200px);
+    opacity: 0.5;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide2{
+  from{
+    transform: translateY(100%);
+    opacity: 0.5;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

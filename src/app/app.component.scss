@@ -1,0 +1,10 @@
+$primaryColor : green;
+$secondaryColor: yellow;
+
+p {
+  color: $primaryColor;
+
+  &:hover{
+    color: $secondaryColor;
+  }
+}
